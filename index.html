@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <script defer src="./app/app.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <main>
+      <!-- hero section -->
+      <section
+        class="hero bg-[url(../images/mobile/image-header.jpg)] w-full h-screen bg-no-repeat bg-cover bg-center md:bg-[url(../images/desktop/image-header.jpg)]"
+      >
+        <div class="container">
+          <!-- header section -->
+          <div class="flex items-center justify-between p-8 relative">
+            <img src="images/logo.svg" alt="logo" />
+
+            <div class="nav-links hidden sm:flex items-center">
+              <a class="text-White mr-8 pr-4 text-lg" href="#">About</a>
+              <a class="text-White mr-8 pr-4 text-lg" href="#">Services</a>
+              <a class="text-White mr-8 pr-4 text-lg" href="#">Projects</a>
+              <a
+                class="text-VDDB bg-White rounded-[2rem] text-center font-bold px-6 py-4 uppercase text-lg items-start hover:bg-cyan hover:text-White"
+                href="#"
+                >Contact</a
+              >
+            </div>
+
+            <img
+              src="images/icon-hamburger.svg"
+              alt="icon-hamburger"
+              class="sm:hidden cursor-pointer"
+              id="nav-icon"
+            />
+
+            <div
+              class="nav-links block text-center sm:hidden absolute top-[180%] left-[50%] -translate-x-1/2 w-[82%] pt-8 bg-White opacity-0 duration-500"
+              id="nav-menu"
+            >
+              <span
+                class="arrow absolute -top-[8%] right-0 border-solid border-[30px]"
+              ></span>
+              <a class="text-VDGB font-bold text-lg block my-8" href="#"
+                >About</a
+              >
+              <a class="text-VDGB font-bold text-lg block my-8" href="#"
+                >Services</a
+              >
+              <a class="text-VDGB font-bold text-lg block my-8" href="#"
+                >Projects</a
+              >
+              <a
+                class="text-VDDB bg-Yellow w-auto rounded-[2rem] mt-3 mb-8 font-bold px-6 py-4 uppercase text-lg inline-block"
+                href="#"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <!-- header end -->
+          <div class="hero-content">
+            <h1
+              class="uppercase text-5xl text-White text-center font-bold mt-24 tracking-[6px] lg:tracking-[10px]"
+            >
+              We are creatives
+            </h1>
+
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="icon-arrow-down"
+              class="mx-auto mt-24"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- hero section ends -->
+
+      <!-- features section  -->
+      <section class="features w-full h-full">
+        <!-- column one -->
+        <div class="col-1 lg:flex lg:flex-row-reverse lg:items-center">
+          <img
+            src="images/mobile/image-transform.jpg"
+            alt="Transform"
+            class="md:hidden"
+          />
+          <img
+            src="images/desktop/image-transform.jpg"
+            alt="image-transform"
+            class="hidden lg:flex lg:w-3/6"
+          />
+          <div
+            class="text-center px-6 py-14 lg:text-left lg:py-16 lg:pl-28 lg:pr-12 lg:w-3/6"
+          >
+            <h2
+              class="text-[35px] lg:text-[45px] text-VDDB font-black lg:w-5/6"
+            >
+              Transform your brand
+            </h2>
+            <p class="font-semibold text-lg py-8 px-2 text-VDGB">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <span
+              ><a
+                href="#"
+                class="uppercase font-bold border-b-4 border-Soft-red hover:border-Yellow"
+                >Learn more</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <!-- column-two -->
+        <div class="col-2 lg:flex lg:flex-row lg:items-center">
+          <img
+            src="images/mobile/image-stand-out.jpg"
+            alt="Transform"
+            class="lg:hidden"
+          />
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            alt="image-transform"
+            class="hidden lg:flex lg:w-3/6"
+          />
+          <div
+            class="text-center px-6 py-14 lg:text-left lg:py-16 lg:pr-28 lg:pl-20 lg:w-3/6"
+          >
+            <h3
+              class="text-[35px] lg:text-[45px] text-VDDB font-black lg:w-5/6"
+            >
+              Stand out to the right audience
+            </h3>
+            <p class="font-semibold text-lg py-8 px-2 lg:px-0 text-VDGB">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <span
+              ><a
+                href="#"
+                class="uppercase font-bold border-b-4 border-Soft-red lg:text-left"
+                >Learn more</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <!-- column-three -->
+        <div class="col-3 lg:flex lg:flex-row lg:items-center">
+          <!-- image-one -->
+          <div class="lg:w-3/6 relative">
+            <img
+              src="images/mobile/image-graphic-design.jpg"
+              alt="Transform"
+              class="md:hidden"
+            />
+            <img
+              src="images/desktop/image-graphic-design.jpg"
+              alt="image-transform"
+              class="hidden md:flex"
+            />
+            <div
+              class="absolute left-2/4 -translate-x-2/4 top-[70%] w-3/4 lg:w-2/4 text-center"
+            >
+              <h4
+                class="text-xl font-black tracking-wider capitalize pb-6 text-DDC"
+              >
+                Graphic design
+              </h4>
+              <p class="text-base mb-4 text-DMC font-bold">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
+          </div>
+
+          <!-- image-two -->
+
+          <div class="md:w-3/6 relative">
+            <img
+              src="images/mobile/image-photography.jpg"
+              alt="Transform"
+              class="md:hidden"
+            />
+            <img
+              src="images/desktop/image-photography.jpg"
+              alt="image-transform"
+              class="hidden md:flex"
+            />
+            <div
+              class="absolute left-2/4 -translate-x-2/4 top-[70%] w-3/4 lg:w-2/4 text-center"
+            >
+              <h5
+                class="text-xl font-black tracking-wider capitalize pb-6 text-DB"
+              >
+                Photography
+              </h5>
+              <p class="text-base mb-4 text-DB">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- features section ends -->
+
+      <!-- testimonial section -->
+
+      <section class="testimonial w-full h-full px-4 py-12 lg:py-24">
+        <h6
+          class="uppercase text-xl text-GB text-center font-bold tracking-widest mb-12"
+        >
+          Client testimonials
+        </h6>
+
+        <div
+          class="testimonial-cards lg:flex lg:items-center lg:justify-between lg:px-24 pb-8"
+        >
+          <!-- first card -->
+          <div class="text-center py-6 lg:px-4">
+            <img
+              src="images/image-emily.jpg"
+              alt="emily"
+              class="rounded-full w-[20%] text-center block mx-auto mb-8"
+            />
+            <p class="text-lg font-semibold px-2 mb-8 text-VDGB">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div class="info">
+              <label for="name" class="font-black text-xl text-VDDB"
+                >Emily R.</label
+              >
+              <p class="font-semibold text-GB mt-2">Marketing Director</p>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="text-center py-6 lg:px-4">
+            <img
+              src="images/image-thomas.jpg"
+              alt="emily"
+              class="rounded-full w-[20%] text-center block mx-auto mb-8"
+            />
+            <p class="text-lg font-semibold px-2 mb-8 text-VDGB">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="info">
+              <label for="name" class="font-black text-xl text-VDDB"
+                >Thomas S.</label
+              >
+              <p class="font-semibold text-GB mt-2">Chief Operating Officer</p>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="text-center lg:px-4">
+            <img
+              src="images/image-jennie.jpg"
+              alt="emily"
+              class="rounded-full w-[20%] text-center block mx-auto mb-8"
+            />
+            <p class="text-lg font-semibold px-2 mb-8 text-VDGB">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="info">
+              <label for="name" class="font-black text-xl text-VDDB"
+                >Jennie F.</label
+              >
+              <p class="font-semibold text-GB mt-2">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section ends -->
+
+      <!-- gallery section -->
+      <section class="gallery w-screen h-full">
+        <div class="block lg:flex lg:items-center">
+          <div class="col-1 flex lg:flex">
+            <!-- image-1 -->
+            <div>
+              <img
+                src="images/mobile/image-gallery-milkbottles.jpg"
+                alt="image-gallery-milkbottles"
+                class="md:hidden"
+              />
+              <img
+                src="images/desktop/image-gallery-milkbottles.jpg"
+                alt="image-gallery-milkbottles"
+                class="hidden md:block"
+              />
+            </div>
+            <!-- image-2 -->
+            <div>
+              <img
+                src="images/mobile/image-gallery-orange.jpg"
+                alt="orange"
+                class="md:hidden"
+              />
+              <img
+                src="images/desktop/image-gallery-orange.jpg"
+                alt="orange"
+                class="hidden md:block"
+              />
+            </div>
+          </div>
+
+          <div class="col-2 flex">
+            <!-- image-3 -->
+            <div>
+              <img src="images/mobile/image-gallery-cone.jpg" alt="cone"
+              class="md:hidden">
+              <img src="images/desktop/image-gallery-cone.jpg" alt="cone"
+              class="hidden lg:block">
+            </div>
+            <!-- image-4 -->
+            <div>
+              <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="cubes"
+              class="md:hidden">
+              <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="cubes"
+              class="hidden lg:block">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery section -->
+
+      <section class="footer bg-DMC h-full w-screen py-16">
+        <div class="max-w-xs mx-auto w-full">
+        <div class="logo">
+          <img src="images/logo1.svg" alt="logo1"
+          class="mx-auto w-48">
+        </div>
+        <div class="icons flex items-center justify-between py-8 px-6 mb-12">
+          <a href="#" class="text-xl font-semibold text-DDC hover:text-White">About</a>
+          <a href="#" class="text-xl font-semibold text-DDC hover:text-White">Services</a>
+          <a href="#" class="text-xl font-semibold text-DDC hover:text-White">Projects</a>
+        </div>
+        <div class="social-icons flex items-center justify-between px-12">
+          <img src="images/icon-facebook.svg" alt="facebook"
+          class="w-8">
+          <img src="images/icon-twitter.svg" alt="icon-twitter"
+          class="w-8">
+          <img src="images/icon-instagram.svg" alt="icon-instagram"
+          class="w-8">
+          <img src="images/icon-pinterest.svg" alt="pinterest"
+          class="w-8">
+
+        </div>
+        </div>
+      </section>
+    </main>
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Headbwoi</a>.
+    </div>
+  </body>
+</html>
